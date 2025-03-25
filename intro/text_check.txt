@@ -1,0 +1,54 @@
+Data underlying the forecasts are not observed:
+Treat individual forecasts like any other conditioning information (data) and
+estimate the best possible mapping from the forecasts to the outcome
+2 Data underlying the model forecasts is observed: ëmodel combinationí
+Using a middle step of Örst constructing forecasts limits the áexibility of the
+Önal forecasting model. Why not directly map the underlying data to the
+forecasts?
+Estimation error plays a key role in the risk of any given method. Model
+combination yields a risk function which, through parsimonious use of the
+data, could result in an attractive risk function
+Combined forecast can be viewed simply as a di§erent estimator of the Önal
+model
+Timmermann (UCSD) Combinations July 29 - August 2, 2013 6 / 50
+Combinations of forecasts: theory
+Restrict conditioning information to a set of m forecasts
+zt = fˆf1t+hjt
+, ....,
+ˆfmt+hjt g
+The optimal combination is the function of the forecasts
+f (
+ˆf1t+hjt
+,
+ˆf2t+hjt
+, ...,
+ˆfmt+hjt
+) that solves
+min
+f (.)
+E
+h
+L(f (
+ˆf1t+hjt
+,
+ˆf2t+hjt
+, ...,
+ˆfmt+hjt
+), yt+h
+)jZt
+i
+Optimality of the combined forecast is conditional on observing the forecasts
+fˆf1t+hjt
+,
+ˆf2t+hjt
+, ...,
+ˆfmt+hjt g rather than the underlying information sets used
+to construct the forecasts
+If the model f (.) is a linear index, the combination is a linear combination
+with weights ω1, ..., ωm
+Timmermann (UCSD) Combinations July 29 - August 2, 2013 7 / 50
+Combinations of forecasts: theory
+Specialized concepts in optimal forecast combination arise from additional
+restrictions placed on the search for combination models
+Because the underlying ëdataíare forecasts, they can be expected to obtain
+non-negative weights that sum to unity,
